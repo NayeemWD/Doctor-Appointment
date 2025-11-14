@@ -8,7 +8,7 @@ const Home = () => {
       <div className="hero bg-blue-50 min-h-96">
         <div className="hero-content flex-col lg:flex-row-reverse w-full">
           <img
-            src="/src/Components/Image/Selection.png"
+            src="/Selection.png"
             className="max-w-md rounded-lg shadow-2xl"
           />
           <div className="flex-1">
