@@ -1,5 +1,6 @@
 import React from "react";
 import { AppContext } from "../Provider/createContext";
+import { NavLink } from "react-router";
 
 const Home = () => {
   return (
@@ -19,15 +20,17 @@ const Home = () => {
               Find and schedule appointments with top doctors near you, easily
               and conveniently. Your health journey simplified.
             </p>
-            <button className="btn btn-primary bg-blue-600 border-none">
+            <NavLink
+              className="btn btn-primary bg-blue-600 border-none"
+              to={"/doctors"}>
               Find Doctors
-            </button>
+            </NavLink>
           </div>
         </div>
       </div>
 
       {/* Search Filters */}
-      <div className="bg-gray-100 py-6 px-4">
+      {/* <div className="bg-gray-100 py-6 px-4">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-4 items-end">
           <div className="flex-1">
             <label className="block text-sm font-medium mb-2">
@@ -55,7 +58,7 @@ const Home = () => {
             🔍 Search
           </button>
         </div>
-      </div>
+      </div> */}
 
       {/* Explore Medical Specialties */}
       <div className="py-16 px-4 bg-white">
